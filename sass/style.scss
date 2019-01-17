@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900|Rubik:400,700');
+
 $main-color: #FF8103;
 $color2: #007DA7;
 $color3: #01A8E9;
@@ -40,6 +42,9 @@ $rojo: #D0021B;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#222222',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+
+
+
 $gray: #9D9D9D;
 
 
@@ -50,6 +55,24 @@ $text-font: "Roboto";
 $facebook: #3b5998;
 $linkedin: #007bb5;
 $google: #dd4b39;
+
+
+
+
+// empieza aca
+
+body{
+    font-family: Roboto;
+}
+h1, h2, h3, h4{
+    font-family: Rubik;
+}
+
+
+strong{
+    font-weight: 600;
+}
+
 
 
 
@@ -66,6 +89,7 @@ html, body{
         flex: 1;
         display: flex;
         flex-direction: column;
+        padding: 0 30px;
         
       
         header{
@@ -96,33 +120,21 @@ html, body{
             }
            
         }
-
-        #landing-links{
-            max-height: 50px;
-            ul{
-                display: flex;
-                padding: 0;
-                list-style: none;
-                li{
-                    margin: 0 10px;
-                    font-size: 12px;
-                }
-            }
-        }
     }
 
-    #account{
+    .account{
         flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 0 30px;
         #login{
             form{
                 padding: 10px 0;
             }
         }
 
-        #create-account{
+        .create-account{
             text-align: center;
             .social-login{
                 justify-content: center;
@@ -161,5 +173,51 @@ html, body{
         .create-company-account{
             height: 30px;
         }
+    }
+
+
+    @media (max-width:1200px){
+        flex-direction: column;
+        height: auto;
+
+        #landing-header{
+            padding: 30px;
+            .logo{
+                max-width: 120px;
+            }
+
+            h2{
+                font-size: 22px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.landing-links{
+    max-height: 50px;
+    ul{
+        display: flex;
+        padding: 0;
+        list-style: none;
+        li{
+            margin: 0 10px;
+            font-size: 12px;
+        }
+    }
+}
+
+
+.web{
+    display: inherit !important;
+    @media (max-width: 1200px){
+        display: none !important;
+    }
+}
+
+.mobile{
+    display: none !important;
+    @media (max-width: 1200px){
+        display: inherit !important;
     }
 }

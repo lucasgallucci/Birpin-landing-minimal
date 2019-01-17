@@ -10,7 +10,7 @@
         <main id="landing-minimal">
             <div id="landing-header">
                 <header>
-                    <img src="img/birpin-white.svg" alt="Plataforma de búsqueda laboral">
+                    <img src="img/birpin-white.svg" class="logo" alt="Plataforma de búsqueda laboral">
                     <h1>encontrar trabajo</h1>
                     <h2>Tu próximo desafío laboral te espera</h2>
                     <ul>
@@ -20,7 +20,7 @@
                     </ul>
                 </header>
             
-                <section id="landing-links">
+                <section class="web landing-links">
                     <ul>
                         <li>¿Por qué Birpin?</li>
                         <li>Misión y valores</li>
@@ -28,10 +28,11 @@
                         <li>Políticas de privacidad</li>
                         <li>Seguridad</li>
                     </ul>
-                </div>
-            </section>
+                </section>
+            </div>
+            
 
-            <section id="account">
+            <section class="account web">
                 <article id="login">
                     <form class="form-inline text-center">
                         <span>Iniciar sesión </span>      
@@ -49,7 +50,7 @@
                     </form>
                 </article>
 
-                <div id="create-account">
+                <div class="create-account">
                     <article class="social-media">
                         <h5>Ingresá con tus redes sociales</h5>
                         <ul class="social-login">
@@ -87,6 +88,118 @@
                     <a href="">crear cuenta empresarial</a>
                 </div>
             </section>
+
+
+
+
+            <section class="account mobile">
+                <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a href="#create" aria-controls="create" role="tab" data-toggle="tab">Crear cuenta</a></li>
+                      <li role="presentation"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Ya tengo cuenta</a></li>
+                    </ul>
+                  
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="create">
+                        <div class="create-account">
+                            <article class="social-media">
+                                <h5>Ingresá con tus redes sociales</h5>
+                                <ul class="social-login">
+                                    <li class="facebook"><ion-icon name="logo-facebook"></ion-icon></li>
+                                    <li class="google"><ion-icon name="logo-google"></ion-icon></li>
+                                    <li class="linkedin"><ion-icon name="logo-linkedin"></ion-icon></li>
+                                </ul>    
+                            </article>
+                            <hr>
+                            <article class="create-account-form">
+                                <h5>Creá tu cuenta usando tu email</h5>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="email" placeholder="email">
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="contraseña" placeholder="contraseña">
+                                    </div>
+                                        
+                                    <button type="submit" class="btn btn-primary btn-block">ingresar</button>
+                                </form>
+                            </article>
+                        </div>
+        
+                        <div class="text-center create-company-account">
+                            <a href="">crear cuenta empresarial</a>
+                        </div>
+
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="login">
+                        <div class="create-account">
+                            <article class="social-media">
+                                <h5>Ingresá con tus redes sociales</h5>
+                                <ul class="social-login">
+                                    <li class="facebook"><ion-icon name="logo-facebook"></ion-icon></li>
+                                    <li class="google"><ion-icon name="logo-google"></ion-icon></li>
+                                    <li class="linkedin"><ion-icon name="logo-linkedin"></ion-icon></li>
+                                </ul>    
+                            </article>
+                            <hr>
+                            <article class="create-account-form">
+                                <h5>Ingresá usando tu email</h5>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="nombre" placeholder="nombre">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="apellido" placeholder="apellido">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="email" placeholder="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="repetir email" placeholder="repetir email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="contraseña" placeholder="contraseña">
+                                    </div>
+                                        
+                                    <button type="submit" class="btn btn-primary btn-block">crear cuenta</button>
+                                </form>
+                            </article>
+                        </div>
+        
+                      </div>
+                    </div>  
+                </div>
+
+            </section>
+
+            <section class="landing-links mobile">
+                <ul>
+                    <li>¿Por qué Birpin?</li>
+                    <li>Misión y valores</li>
+                    <li>Términos y condiciones</li>
+                    <li>Políticas de privacidad</li>
+                    <li>Seguridad</li>
+                </ul>
+            </section>
         </main>
+
+
+         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+
+        <script> 
+               $('#myTabs a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+          })
+        </script>
+
+
+
     </body>
 </html>
